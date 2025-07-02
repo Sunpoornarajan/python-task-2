@@ -1,0 +1,11 @@
+import math
+
+def compute_lcm_and_gcd(a, b):
+    gcd = math.gcd(a, b)
+    lcm = abs(a * b) // gcd
+    return lcm, gcd
+
+# Example
+print("LCM and GCD (12, 18):", compute_lcm_and_gcd(12, 18)) 
+
+# Output: (36, 6)
