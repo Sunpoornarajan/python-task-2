@@ -1,0 +1,9 @@
+def reverse_list(lst):
+    for i in range(len(lst) // 2):
+        lst[i], lst[-1 - i] = lst[-1 - i], lst[i]
+    return lst
+
+# Example
+print("Reversed List:", reverse_list([1, 2, 3, 4, 5]))
+
+# Output: [5, 4, 3, 2, 1]
